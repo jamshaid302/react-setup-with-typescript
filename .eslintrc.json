@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["build/**/*"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "rules": {
+    "indent": "off",
+    "prefer-rest-params": "warn",
+    "no-useless-escape": "warn",
+    "prefer-spread": "warn",
+    "no-async-promise-executor": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "warn",
+    "prettier/prettier": "error",
+    "no-use-before-define": "off",
+    "no-console": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": "off",
+    "no-irregular-whitespace": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect the react version
+    }
+  }
+}
